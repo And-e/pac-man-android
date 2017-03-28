@@ -1,6 +1,7 @@
 # pac-man-style-android
 Pac-man style Android game
 
+Created by Andrew Johnson, November/December 2016
 
 This project was written in Java using Android Studio.
 
