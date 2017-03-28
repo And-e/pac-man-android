@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:key="number_ghosts"
+        android:title="Ghosts on Level 1"
+        android:entries="@array/ghosts"
+        android:entryValues="@array/ghosts">
+    </ListPreference>
+
+    <ListPreference
+        android:key="additional_ghosts"
+        android:title="Additional Ghosts per Level"
+        android:entries="@array/ghosts"
+        android:entryValues="@array/ghosts">
+    </ListPreference>
+</PreferenceScreen>

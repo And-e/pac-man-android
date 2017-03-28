@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.johnson.andy.pacmangame.MainActivity">
+
+    <com.johnson.andy.pacmangame.GameBoard
+        android:id="@+id/gameBoard"
+    android:layout_width="350dp"
+    android:layout_height="350dp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <Button android:layout_width="174dp"
+            android:layout_height="74dp"
+            android:id="@+id/startStopBtn"></Button>
+
+        <Button
+            android:layout_height="45dp"
+            android:id="@+id/button6"
+            android:layout_width="45dp"
+            android:onClick="onDownClick"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/leftBtn"
+            android:layout_toEndOf="@+id/leftBtn" />
+
+        <TextView
+            android:text="Cakes Left: "
+            android:textColor="@android:color/background_light"
+            android:layout_below="@+id/startStopBtn"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_height="20dp"
+            android:textSize="18sp"
+            android:layout_width="130dp"
+            android:id="@+id/cakesLeft">
+
+        </TextView>
+
+        <Button
+            android:layout_width="45dp"
+            android:id="@+id/upBtn"
+            android:layout_height="45dp"
+            android:textSize="24sp"
+
+            android:onClick="onUpClick"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/rightBtn"
+            android:layout_toStartOf="@+id/rightBtn" />
+
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/rightBtn"
+            android:textSize="20sp"
+            android:onClick="onRightClick"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/leftBtn"
+            android:textSize="20sp"
+            android:onClick="onLeftClick"
+            android:layout_alignBaseline="@+id/rightBtn"
+            android:layout_alignBottom="@+id/rightBtn"
+            android:layout_toLeftOf="@+id/upBtn"
+            android:layout_toStartOf="@+id/upBtn" />
+
+        <TextView
+            android:text="Level: "
+            android:textColor="@android:color/background_light"
+            android:layout_height="20dp"
+            android:textSize="18sp"
+            android:layout_width="130dp"
+            android:id="@+id/level"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+        </TextView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

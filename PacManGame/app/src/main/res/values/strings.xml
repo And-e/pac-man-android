@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AwjohnsonProject</string>
+    <string name="action_about">About</string>
+    <string name="preferences">Settings</string>
+    <string-array name="ghosts">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+</resources>
